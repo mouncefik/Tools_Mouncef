@@ -19,3 +19,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Ensure backgrounds print correctly */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
